@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1> Everyone!!</h1>
+	<script>
+		//using innerHTML
+		var section1=document.createElement('p')
+		section1.innerHTML="<h4> A web browser is an application for accessing websites. When a user requests a web page from a particular website, the browser retrieves its files from a web server and then displays the page on the user's screen.</h4>"
+	
+		document.body.append(section1)
+
+		console.log(section1)
+
+       //using inner text
+	   var section2=document.createElement('p')
+	   section2.innerText="<h4> A web browser is an application for accessing websites. When a user requests a web page from a particular website, the browser retrieves its files from a web server and then displays the page on the user's screen.</h4>"
+	   document.body.append(section2)
+
+	   console.log(section2)
+
+	   //appending to any element
+	   var section3=document.createElement('span')
+	   section3.innerText="Read top news in India and around the world on Times of India."
+
+	   section.append(section3)
+
+	   console.log(section3)
+	
+	</script>
+</body>
+</html>

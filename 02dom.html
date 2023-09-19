@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container" id="header">
+		<div class="navHeading"> Home</div>
+		<div class="navHeading">About us</div>
+		<div class="navHeading">Services</div>
+		<div class="navHeading">Contect us</div>
+
+	</div>
+	<script>
+		//target the element
+		//selectors-CSS
+		//tag selectors
+		//id selectors
+		//class selectors
+
+		//id selectors
+		//docoment.getElementByID()
+		var header1=document.getElementById('header')
+		console.log(header1)
+		header1.style.backgroundColor="yellow"
+
+
+		//class selector
+		//docoment.getElementByClassName()
+		//return an HTML collection in an array
+
+		var navHeaders=document.getElementsByClassName('navHeading')
+		console.log(navHeaders)
+
+		//tag
+		//document.getElementsByTagName()
+		//return in HTML collection as an Array
+		var Tags=document.getElementsByTagName('div')
+		cosole.log(Tags)
+
+		//query selectors
+		//id ,class or tag
+		//document.querySelectors()
+		//1st element
+		var qs=document.querySelector('.navHeading')
+		console.log(qs)
+
+		var qs=document.querySelector('#header')
+		console.log(qsId)
+
+		//query selector all
+		//nodelist=>array
+		//document.queryselectorsall()
+		var qsAll=document.querySelectorAll('.navHeading')
+		console.log(qsAll)
+
+		var qsAll=document.querySelectorAll('#header')
+		console.log(qsAllId)
+
+		var qsAll=document.querySelectorAll('div')
+		console.log(qsAllId1)
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
