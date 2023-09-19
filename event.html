@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	//perform any action event is triggered<br>
+	<button
+	 onclick="click()"
+	 >Click Me</button>
+	 <input type="text" oninput="random()"/>
+	 <input type="text" name="" id="" onblur="random1()"/>
+
+
+	 <input onkeypress="random (event)"/>
+	 <script>
+		var count=0
+		function Click(){
+			count++;
+			console.log("Button is Clicked",count)
+		}
+		function random(){
+			console.log(event)
+			console.log("event.target.value",event.target.value)
+			count++
+			console.log(count,"random")
+		}
+		function random1(){
+			count++
+			console.log(count)
+		}
+	 </script>
+</body>
+</html>
