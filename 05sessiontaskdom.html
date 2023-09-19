@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+function decToBinary(n)
+{
+
+    let binaryNum = new Array(32);
+ 
+    let i = 0;
+    while (n > 0) {
+ 
+        binaryNum[i] = n % 2;
+        n = Math.floor(n / 2);
+        i++;
+    }
+ 
+    for (let j = i - 1; j >= 0; j--)
+        document.write(binaryNum[j]);
+}
+ 
+    let n = 17;
+    decToBinary(n);
+   </script>  
+</body>
+</html>
